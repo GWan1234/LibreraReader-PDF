@@ -83,7 +83,7 @@ public class CbzCbrExtractor {
                         continue;
                     }
 
-                    String name = it.getFileNameString().toLowerCase(Locale.US);
+                    String name = it.getFileName().toLowerCase(Locale.US);
                     if ("comicinfo.xml".equals(name)) {
                         continue;
                     }
@@ -130,7 +130,7 @@ public class CbzCbrExtractor {
                         continue;
                     }
 
-                    String name = it.getFileNameString().toLowerCase(Locale.US);
+                    String name = it.getFileName().toLowerCase(Locale.US);
                     if ("comicinfo.xml".equals(name)) {
                         archive.extractFile(it, byteArrayStream);
                         break;
@@ -217,7 +217,7 @@ public class CbzCbrExtractor {
                         continue;
                     }
 
-                    String name = it.getFileNameString().toLowerCase(Locale.US);
+                    String name = it.getFileName().toLowerCase(Locale.US);
                     if ("comicinfo.xml".equals(name)) {
                         archive.extractFile(it, byteArrayStream);
                         break;
@@ -398,7 +398,7 @@ public class CbzCbrExtractor {
                 List<FileHeader> fileHeaders = archive.getFileHeaders();
                 Collections.sort(fileHeaders, new Comparator<FileHeader>() {
                     @Override public int compare(FileHeader o1, FileHeader o2) {
-                        return o1.getFileNameString().compareTo(o2.getFileNameString());
+                        return o1.getFileName().compareTo(o2.getFileName());
                     }
                 });
 
@@ -412,7 +412,7 @@ public class CbzCbrExtractor {
                     if (it.isDirectory()) {
                         continue;
                     }
-                    String lowerCase = it.getFileNameString().toLowerCase(Locale.US);
+                    String lowerCase = it.getFileName().toLowerCase(Locale.US);
                     if (lowerCase.contains("\\")) {
                         lowerCase = lowerCase.substring(lowerCase.indexOf("\\") + 1);
                     }
@@ -423,9 +423,9 @@ public class CbzCbrExtractor {
                     }
                 }
 
-                LOG.d("fileHeader", fileHeader.getFileNameString());
+                LOG.d("fileHeader", fileHeader.getFileName());
 
-                LOG.d("EXtract CBR", fileHeader.getFileNameString());
+                LOG.d("EXtract CBR", fileHeader.getFileName());
                 archive.extractFile(fileHeader, out);
                 archive.close();
             }

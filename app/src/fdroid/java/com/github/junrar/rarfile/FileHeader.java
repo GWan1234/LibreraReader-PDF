@@ -1,7 +1,7 @@
 package com.github.junrar.rarfile;
 
 public class FileHeader {
-    public String getFileNameString() {
+    public String getFileName() {
         return null;
     }
 
