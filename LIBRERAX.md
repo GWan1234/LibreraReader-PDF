@@ -78,3 +78,7 @@
 
 - Backup exports and imports the library, its metadata and the settings.
 - Light, dark and e-ink app themes, and the interface language.
+
+# Download direct APK
+
+https://github.com/foobnix/LibreraReader/releases
