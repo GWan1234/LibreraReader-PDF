@@ -1,16 +1,9 @@
 # LibreraX
 
-![](docs/librerax/Screenshot_20260906_130854.png)
-
-![](docs/librerax/Screenshot_20260906_130833.png)
-
-![](docs/librerax/Screenshot_20260906_130844.png)
-
-![](docs/librerax/Screenshot_20260906_130859.png)
-
-![](docs/librerax/Screenshot_20260906_130909.png)
-
-![](docs/librerax/Screenshot_20260906_130916.png)
+| | | |
+|---|---|---|
+| ![](docs/librerax/Screenshot_20260906_130854.png) | ![](docs/librerax/Screenshot_20260906_130833.png) | ![](docs/librerax/Screenshot_20260906_130844.png) |
+| ![](docs/librerax/Screenshot_20260906_130859.png) | ![](docs/librerax/Screenshot_20260906_130909.png) | ![](docs/librerax/Screenshot_20260906_130916.png) |
 
 ## Formats
 
